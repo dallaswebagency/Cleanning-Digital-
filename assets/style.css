@@ -978,3 +978,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #9C
 @media(max-width:1000px){.rs-kpis{grid-template-columns:repeat(2,1fr)}.rs-charts,.rs-shots{grid-template-columns:1fr}}
 @media(max-width:600px){.rs-kpis{grid-template-columns:1fr}.rs-kpi b{font-size:2rem}.rs-card,.rs-shot{padding:var(--s4)}.rs-shots,.rs-charts{gap:var(--s3)}}
 .rs-kpis>*,.rs-charts>*,.rs-shots>*{min-width:0}
+
+/* service guide */
+.sg-grid{margin-top:var(--s6)}
+.sg-grid .card h3{margin-bottom:var(--s3)}
+.sg-grid .checks li{font-size:.9375rem}
+.sg-links{list-style:none;display:grid;gap:var(--s3)}.sg-links li{color:var(--muted);line-height:1.55}.sg-links a{font-weight:700;color:var(--accent-dk)}
+.callout p{margin:0}
