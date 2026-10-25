@@ -130,3 +130,30 @@ document.querySelectorAll('[data-mq-toggle]').forEach(function(b){
   window.addEventListener('load',function(){setTimeout(start,2500)});
   document.addEventListener('visibilitychange',function(){ if(document.hidden){clearInterval(timer);timer=null;} else start(); });
 })();
+
+/* Conversion events (sent only when Google Analytics is installed) */
+(function(){
+  function ev(n,p){if(typeof window.gtag==='function'){window.gtag('event',n,p||{})}}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a');if(!a)return;
+    var h=a.getAttribute('href')||'';
+    if(h.indexOf('zcal.co')>-1){ev('book_discovery_call',{link_text:(a.textContent||'').trim().slice(0,60),page_path:location.pathname})}
+    else if(h.indexOf('mailto:')===0){ev('email_click',{page_path:location.pathname})}
+    else if(h.indexOf('tel:')===0){ev('phone_click',{page_path:location.pathname})}
+    else if(a.classList.contains('wk')){ev('portfolio_open',{link_text:(a.getAttribute('aria-label')||'').slice(0,60)})}
+  },true);
+  document.addEventListener('submit',function(e){ev('generate_lead',{form_id:(e.target&&e.target.id)||'form',page_path:location.pathname})},true);
+})();
+
+/* conversion event hooks: only fire when GA4 (gtag) is installed */
+(function(){
+  function ev(n,p){try{if(window.gtag)window.gtag('event',n,p||{})}catch(e){}}
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a');if(!a)return;
+    var h=a.getAttribute('href')||'';
+    if(h.indexOf('zcal.co')>-1)ev('book_discovery_call',{link_text:(a.textContent||'').trim().slice(0,40),page_path:location.pathname});
+    else if(h.indexOf('mailto:')===0)ev('email_click',{page_path:location.pathname});
+    else if(h.indexOf('tel:')===0)ev('phone_click',{page_path:location.pathname});
+  });
+  document.addEventListener('submit',function(e){ev('generate_lead',{form_id:(e.target&&e.target.id)||'form',page_path:location.pathname})});
+})();
