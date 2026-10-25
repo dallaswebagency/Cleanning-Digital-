@@ -36,9 +36,10 @@
     });o.observe(el);
   });
 
-  var f=document.querySelector('form[data-demo]');
-  if(f){f.addEventListener('submit',function(e){
-    e.preventDefault();
-    f.innerHTML='<div class="center" style="padding:40px 10px"><div class="ico g" style="margin:0 auto 20px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2f9a0c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></div><h3>Thanks, we got it.</h3><p style="color:#5B6F88;margin-top:10px">We will send your free website audit within 1 business day.</p></div>';
-  })}
+  document.querySelectorAll('form[data-demo]').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      f.innerHTML='<div class="center" role="status" style="padding:32px 8px"><div class="ico" style="margin:0 auto 24px"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg></div><h3>Thanks, we got your message.</h3><p style="color:#737373;margin-top:8px">We will be in touch to arrange your discovery call.</p></div>';
+    });
+  });
 })();
