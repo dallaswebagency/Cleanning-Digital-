@@ -526,3 +526,8 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 }
 @media (max-width:620px){.pr-grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.pr{opacity:1;filter:none;transition:none}.pr-wiper,.pr-fill{display:none}.pr-spark{opacity:1;transform:none;transition:none}}
+/* illustrated service backgrounds */
+.sv-img::after{background:linear-gradient(180deg,rgba(8,43,83,0) 55%,rgba(8,43,83,.35))}
+.svc-art::before{display:none}
+.svc-art{min-height:0;aspect-ratio:16/9;display:block;background-position:center}
+.svc-art .sv-ic{position:absolute;left:var(--s5);bottom:var(--s5);z-index:1;width:64px;height:64px;border-radius:16px;background:#fff;color:var(--accent);display:grid;place-items:center;box-shadow:0 12px 24px -12px rgba(2,26,54,.6);border:0}
