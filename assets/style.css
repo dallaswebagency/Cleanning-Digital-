@@ -615,3 +615,21 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .footer .brand{flex-wrap:wrap;column-gap:12px;row-gap:2px}
 .footer .brand .logo img{height:60px;max-width:100%}
 @media (max-width:640px){.footer .brand .logo img{height:50px}}
+
+/* brand lockup v3: tagline tucked under the logo, right-aligned to its edge, bold (like "An E2M Company") */
+.brand,.footer .brand{display:inline-flex;flex-direction:column;align-items:flex-end;flex-wrap:nowrap;gap:0}
+.brand .logo{padding-block:0;line-height:0}
+.header .brand .logo img{height:54px}
+.footer .brand .logo img{height:62px;max-width:none}
+.logo-by,.footer .logo-by{font-size:.8125rem;font-weight:700;line-height:1;margin:3px 2px 0 0;padding:2px 0;color:var(--ink);letter-spacing:0;opacity:1;text-align:right}
+.logo-by b{color:inherit;font-weight:700}
+.footer .logo-by,.footer .logo-by b{color:#fff}
+.logo-by:hover{color:var(--accent-dk)}.footer .logo-by:hover{color:#BFE0FA}
+.logo-by:hover b{text-decoration:none}
+@media (max-width:1120px){.header .brand .logo img{height:46px}}
+@media (max-width:640px){
+  .header .brand{align-items:flex-end}
+  .header .brand .logo img{height:40px}
+  .header .logo-by{font-size:.6875rem;margin:2px 1px 0 0}
+  .footer .brand .logo img{height:50px}
+}
