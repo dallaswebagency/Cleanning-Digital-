@@ -43,3 +43,13 @@
     });
   });
 })();
+
+/* hero video pause/play */
+(function(){
+  var b=document.querySelector('[data-vid-toggle]'), v=document.querySelector('.hero-bg');
+  if(!b||!v) return;
+  b.addEventListener('click',function(){
+    if(v.paused){ v.play(); b.setAttribute('aria-label','Pause background video'); b.firstChild.innerHTML='&#10074;&#10074;'; }
+    else { v.pause(); b.setAttribute('aria-label','Play background video'); b.firstChild.innerHTML='&#9654;'; }
+  });
+})();
