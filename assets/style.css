@@ -778,3 +778,16 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 /* service page process cards */
 .svc-pr{opacity:1!important;filter:none!important;transform:none!important}
 .svc-pr h3,.svc-pr p{color:inherit;opacity:1}
+
+/* blog images */
+.post .cover{padding:0;overflow:hidden;background:var(--navy)}
+.post .cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.post:hover .cover img{transform:scale(1.04)}
+.post-fig{margin:0 0 var(--s6);border-radius:var(--r-card);overflow:hidden}
+.post-fig img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+.post-more{max-width:900px;margin:var(--s8) auto 0}
+.post-more .card{display:block}
+@media (max-width:700px){.post-more .g2{grid-template-columns:1fr}}
+
+.article p a,.article li a{color:var(--accent-dk);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.article p a:hover{color:var(--accent)}
