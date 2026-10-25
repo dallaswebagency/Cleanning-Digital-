@@ -580,3 +580,17 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .about-tag{background:linear-gradient(120deg,var(--navy),var(--accent-dk));border-radius:var(--r-card);padding:var(--s8) var(--s7);text-align:center;display:grid;gap:var(--s6);justify-items:center}
 .about-tag p{font-family:var(--head);font-weight:800;font-size:clamp(1.6rem,4vw,2.75rem);line-height:1.2;color:#fff;max-width:22ch}
 @media (max-width:620px){.fc-facts{grid-template-columns:1fr}.about-tag{padding:var(--s7) var(--s5)}}
+
+/* brand lockup: logo + By Dallas Web Agency */
+.brand{display:flex;flex-direction:column;align-items:flex-start;flex:none}
+.brand .logo{padding-block:0}
+.header .brand .logo img{height:42px}
+.logo-by{font-size:.875rem;line-height:1.2;color:var(--charcoal);margin-top:2px;padding-block:2px;letter-spacing:.01em}
+.logo-by b{color:var(--accent-dk);font-weight:700}
+.logo-by:hover b{text-decoration:underline}
+.footer .logo-by{color:#C5D9EC;margin-top:6px}
+.footer .logo-by b{color:#fff}
+.pb-dwa{margin-left:12px;padding-left:12px;border-left:1px solid #1E4C80}
+.pb-dwa a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px;padding-block:0!important}
+@media (max-width:620px){.pb-dwa{display:block;margin:6px 0 0;padding:0;border:0}}
+@media (max-width:1120px){.header .brand .logo img{height:36px}}
