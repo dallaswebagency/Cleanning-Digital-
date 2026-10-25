@@ -714,3 +714,15 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .fc2 .fc-links a{border-color:rgba(255,255,255,.6);color:#fff;background:rgba(255,255,255,.12)}
 .fc2 .fc-links a:hover{background:#fff;color:var(--navy)}
 @media(max-width:620px){.fc2{min-height:0;aspect-ratio:auto;height:560px}.fc2-cap{padding:var(--s5)}}
+
+/* Inner page photo heroes */
+.page-hero.ph-photo{position:relative;overflow:hidden;background:var(--navy);color:#fff;--muted:#E5EEF7;padding-block:clamp(72px,10vw,128px)}
+.ph-bg{position:absolute;inset:0;z-index:0}
+.ph-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,43,83,.72),rgba(8,43,83,.82))}
+.ph-s{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease}
+.ph-s.on{opacity:1}
+.page-hero.ph-photo .container{position:relative;z-index:1}
+.page-hero.ph-photo h1{color:#fff}
+.page-hero.ph-photo .lead,.page-hero.ph-photo .crumbs,.page-hero.ph-photo .crumbs a{color:#E5EEF7}
+.page-hero.ph-photo .eyebrow{color:#fff}
+@media (prefers-reduced-motion:reduce){.ph-s{transition:none}}
