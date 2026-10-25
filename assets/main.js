@@ -53,3 +53,12 @@
     else { v.pause(); b.setAttribute('aria-label','Play background video'); b.firstChild.innerHTML='&#9654;'; }
   });
 })();
+
+/* review marquee pause */
+document.querySelectorAll('[data-mq-toggle]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var mq=document.querySelector('[data-mq]'); if(!mq) return;
+    var on=mq.classList.toggle('paused');
+    b.setAttribute('aria-pressed',on?'true':'false'); b.textContent=on?'Play reviews':'Pause reviews';
+  });
+});
