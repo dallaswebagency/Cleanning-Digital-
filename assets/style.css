@@ -770,3 +770,7 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .btn-pill.nav-cta{min-height:46px;padding:4px 4px 4px 20px;gap:10px;font-size:.9375rem}
 .btn-pill.nav-cta::after{width:36px;height:36px;font-size:1rem}
 @media (max-width:520px){.btn-pill:not(.f-book){padding-left:20px;font-size:.9375rem}}
+
+/* numbering removed site-wide */
+.step::before{content:none;display:none}
+.fq-n,.pr-n{display:none}
