@@ -86,3 +86,28 @@ document.querySelectorAll('[data-mq-toggle]').forEach(function(b){
   }
   new IntersectionObserver(function(es){es.forEach(function(e){visible=e.isIntersecting; if(visible&&!running) cycle(); if(!visible){clear();running=false;}})},{threshold:.3}).observe(wrap);
 })();
+
+/* random Trustpilot review: pop-up on every page + small frame on home */
+(function(){
+  var R=window.CD_REVIEWS; if(!R||!R.length) return;
+  var last=-1; try{last=parseInt(sessionStorage.getItem('cdRev'),10);if(isNaN(last))last=-1}catch(e){}
+  var i=Math.floor(Math.random()*R.length); if(R.length>1&&i===last) i=(i+1)%R.length;
+  var j=(i+1+Math.floor(Math.random()*(R.length-1)))%R.length;
+  try{sessionStorage.setItem('cdRev',String(i))}catch(e){}
+  var hr=document.querySelector('[data-hero-rev]');
+  if(hr){var r=R[j]; hr.querySelector('[data-hr-text]').textContent=r.t; hr.querySelector('[data-hr-name]').textContent=r.n;}
+  var r=R[i], reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var t=document.createElement('aside'); t.className='rev-pop'; t.setAttribute('role','status'); t.setAttribute('aria-live','polite');
+  t.innerHTML='<button type="button" class="rp-x" aria-label="Close review">&times;</button>'+
+    '<div class="rp-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>'+
+    '<p class="rp-t"></p><p class="rp-n"><b></b><span></span></p>'+
+    '<a class="rp-l" target="_blank" rel="noopener">Read on Trustpilot</a>';
+  t.querySelector('.rp-t').textContent='“'+r.t+'”';
+  t.querySelector('.rp-n b').textContent=r.n; t.querySelector('.rp-n span').textContent=r.c?(' · '+r.c):'';
+  t.querySelector('.rp-l').href=window.CD_TP;
+  document.body.appendChild(t);
+  var hide=function(){t.classList.remove('show'); setTimeout(function(){t.remove()},reduce?0:500)};
+  t.querySelector('.rp-x').addEventListener('click',hide);
+  setTimeout(function(){t.classList.add('show')},reduce?300:3500);
+  setTimeout(hide,reduce?15000:13000);
+})();
