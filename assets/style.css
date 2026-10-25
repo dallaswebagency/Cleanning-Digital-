@@ -633,3 +633,15 @@ a.card:hover,.card:hover{border-color:var(--mid)}
   .header .logo-by{font-size:.6875rem;margin:2px 1px 0 0}
   .footer .brand .logo img{height:50px}
 }
+
+/* Zcal scheduler embed */
+.form-zcal{padding:var(--s5);overflow:hidden}
+.form-zcal h3,.form-zcal>p{padding-inline:var(--s2)}
+.form-zcal iframe{display:block;width:100%!important;max-width:1096px;margin:var(--s4) auto 0;min-width:0!important}
+.cta-stack{grid-template-columns:1fr;gap:var(--s6);align-items:start}
+.cta-stack>div:first-child{max-width:60ch}
+.contact-stack{grid-template-columns:1fr}
+.contact-side{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+.contact-side .card{margin-bottom:0!important}
+@media(max-width:800px){.contact-side{grid-template-columns:1fr}.form-zcal{padding:var(--s3)}.form-zcal iframe{height:1100px!important}}
+@media(max-width:640px){.cta-stack{padding:var(--s5) var(--s3)}.form-zcal{padding:var(--s2)}}
