@@ -652,3 +652,15 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .header .logo-by{font-size:.875rem;margin-top:4px}
 @media (max-width:1120px){.header .nav{min-height:88px;padding-block:10px}.header .brand .logo img{height:54px}}
 @media (max-width:640px){.header .nav{min-height:78px;padding-block:8px}.header .brand .logo img{height:46px}.header .logo-by{font-size:.75rem}}
+
+/* hero trust badges */
+.hero-badges{display:flex;flex-wrap:wrap;gap:14px;margin-top:var(--s6);list-style:none;padding:0}
+.hb,.hb a{display:flex;align-items:center;gap:12px;color:#fff}
+.hb{padding:12px 20px 12px 14px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.hb b{display:block;font-size:1rem;line-height:1.2;font-weight:700}
+.hb small{display:block;font-size:.8125rem;line-height:1.3;color:#E3EEF8}
+.hb-ic{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#fff;flex:none}
+.hb-stars{color:var(--gold);font-size:1.125rem;letter-spacing:2px;flex:none}
+.hb:has(a):hover{background:rgba(255,255,255,.24)}
+.hb a:focus-visible{outline:2px solid #fff;outline-offset:6px;border-radius:999px}
+@media(max-width:640px){.hero-badges{gap:10px}.hb{padding:10px 16px 10px 12px;width:100%}.hb-stars{font-size:1rem;letter-spacing:1px}}
