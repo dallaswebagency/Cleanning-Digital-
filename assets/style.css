@@ -594,3 +594,7 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .pb-dwa a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px;padding-block:0!important}
 @media (max-width:620px){.pb-dwa{display:block;margin:6px 0 0;padding:0;border:0}}
 @media (max-width:1120px){.header .brand .logo img{height:36px}}
+
+/* HubSpot embedded form */
+.form-hs .hs-form-frame{min-height:320px;margin-top:8px}
+.form-hs iframe{max-width:100%}
