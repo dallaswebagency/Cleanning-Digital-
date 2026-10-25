@@ -645,3 +645,10 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .contact-side .card{margin-bottom:0!important}
 @media(max-width:800px){.contact-side{grid-template-columns:1fr}.form-zcal{padding:var(--s3)}.form-zcal iframe{height:1100px!important}}
 @media(max-width:640px){.cta-stack{padding:var(--s5) var(--s3)}.form-zcal{padding:var(--s2)}}
+
+/* header: more breathing room, bigger logo */
+.header .nav{min-height:104px;padding-block:14px}
+.header .brand .logo img{height:66px}
+.header .logo-by{font-size:.875rem;margin-top:4px}
+@media (max-width:1120px){.header .nav{min-height:88px;padding-block:10px}.header .brand .logo img{height:54px}}
+@media (max-width:640px){.header .nav{min-height:78px;padding-block:8px}.header .brand .logo img{height:46px}.header .logo-by{font-size:.75rem}}
