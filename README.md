@@ -11,4 +11,4 @@ Before launch, review:
 - pricing.html: starting prices are sample figures, confirm before going live
 - contact.html and the homepage form: front-end demo only, connect to your form handler or CRM
 - privacy.html: draft text, have it reviewed and add registered business details
-- Email is set to hello@cleaningdigital.com, change if different
+- Email is set to nakul@cleaningdigital.com, change if different
