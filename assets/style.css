@@ -495,3 +495,34 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .pb-fix span{color:#17703A;font-size:.875rem}
 .pb-n{color:#BBD6EE}
 .rc .av{font-size:.875rem}
+
+/* process with wiper animation */
+.process{background:#fff}
+.pr-wrap{position:relative;margin-top:var(--s7)}
+.pr-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s5);position:relative;z-index:1}
+.pr-track{position:absolute;left:0;right:0;top:0;height:150px;z-index:2;pointer-events:none}
+.pr-track::before{content:"";position:absolute;left:12.5%;right:12.5%;top:61px;height:4px;border-radius:4px;background:repeating-linear-gradient(90deg,#CFE3F3 0 10px,transparent 10px 18px)}
+.pr-fill{position:absolute;left:0;top:20px;height:100px;width:0;background:linear-gradient(90deg,rgba(10,111,184,0),rgba(10,111,184,.16) 70%,rgba(10,111,184,.28));border-radius:0 12px 12px 0}
+.pr-wiper{position:absolute;top:0;left:0;width:64px;transform:translateX(-32px);filter:drop-shadow(0 10px 10px rgba(8,43,83,.25));opacity:0}
+.pr-wrap.run .pr-wiper{opacity:1}
+.pr{background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:var(--s6);padding-top:calc(var(--s5) + 8px);position:relative;opacity:.6;filter:grayscale(.7);transition:opacity .6s,filter .6s,border-color .6s,box-shadow .6s,transform .6s}
+.pr.on{opacity:1;filter:none;border-color:var(--accent);box-shadow:0 26px 44px -30px rgba(10,111,184,.6);transform:translateY(-4px)}
+.pr:hover{opacity:1;filter:none;border-color:var(--accent)}
+.pr-ic{width:72px;height:72px;border-radius:20px;background:var(--tint);color:var(--accent);display:grid;place-items:center;margin-bottom:var(--s5);transition:background .5s,color .5s,transform .5s}
+.pr.on .pr-ic,.pr:hover .pr-ic{background:var(--accent);color:#fff;transform:scale(1.06) rotate(-4deg)}
+.pr-n{display:block;font-size:.875rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-dk);margin-bottom:var(--s2)}
+.pr h3{margin-bottom:var(--s3)}
+.pr-io{margin-top:var(--s5);padding-top:var(--s4);border-top:1px dashed #CFE3F3;display:grid;gap:var(--s3)}
+.pr-io li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;line-height:1.45}
+.pr-io b{display:block;color:var(--ink);font-size:.875rem}
+.pr-bi{flex:none;width:32px;height:32px;border-radius:50%;background:var(--tint);color:var(--accent);display:grid;place-items:center}
+.pr-bi.dl{background:#E3F5E8;color:var(--green)}
+.pr-spark{position:absolute;top:var(--s5);right:var(--s5);color:var(--gold);opacity:0;transform:scale(.2) rotate(-40deg);transition:opacity .4s,transform .5s cubic-bezier(.3,1.6,.5,1)}
+.pr.on .pr-spark{opacity:1;transform:scale(1.2) rotate(0)}
+@media (max-width:1040px){
+  .pr-grid{grid-template-columns:1fr 1fr}
+  .pr-track{display:none}
+  .pr{opacity:1;filter:none}
+}
+@media (max-width:620px){.pr-grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.pr{opacity:1;filter:none;transition:none}.pr-wiper,.pr-fill{display:none}.pr-spark{opacity:1;transform:none;transition:none}}
