@@ -9,11 +9,16 @@
       var o=m.classList.toggle('open');
       b.setAttribute('aria-expanded',o);
       document.body.style.overflow=o?'hidden':'';
+      b.setAttribute('aria-label',o?'Close menu':'Open menu');
     });
+    function closeMenu(){m.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Open menu');document.body.style.overflow=''}
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){closeMenu();b.focus()}});
+    m.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&!a.parentElement.classList.contains('has-dd')){closeMenu()}});
+    window.addEventListener('resize',function(){if(window.innerWidth>1120)closeMenu()});
   }
   document.querySelectorAll('.has-dd>a').forEach(function(a){
     a.addEventListener('click',function(e){
-      if(window.innerWidth<=1120){e.preventDefault();a.parentElement.classList.toggle('open')}
+      if(window.innerWidth<=1120){e.preventDefault();var o=a.parentElement.classList.toggle('open');a.setAttribute('aria-expanded',o)}
     });
   });
 
