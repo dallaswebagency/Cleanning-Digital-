@@ -949,3 +949,4 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #9C
 .grid.g4.cs-cards{grid-template-columns:repeat(4,1fr)}
 @media(max-width:1000px){.grid.g4.cs-cards{grid-template-columns:repeat(2,1fr)}.cs-snap{grid-template-columns:repeat(2,1fr)}.cs-full{grid-template-columns:1fr}}
 @media(max-width:600px){.grid.g4.cs-cards{grid-template-columns:1fr}.cs-view-lg{height:380px}.cs-shot:hover .cs-view-lg img{transform:translateY(calc(-100% + 380px))}}
+@media(min-width:1001px){.menu>li.has-dd:nth-child(3) .dd{min-width:360px}}
