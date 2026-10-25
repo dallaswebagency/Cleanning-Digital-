@@ -754,3 +754,19 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .footer .f-book:hover{background:#fff;color:var(--accent-dk);transform:translateY(-2px);box-shadow:0 0 0 6px rgba(255,255,255,.2),0 20px 34px -14px rgba(0,0,0,.6)}
 .footer .f-book:hover::after{transform:translateX(3px);background:var(--accent-dk)}
 .footer .f-book:focus-visible{outline:3px solid #fff;outline-offset:4px}
+
+/* Book a discovery call: pill + arrow chip on every CTA */
+.btn-pill:not(.f-book){gap:12px;min-height:52px;padding:6px 6px 6px 24px;border-radius:999px;font-family:var(--head);font-weight:700;box-shadow:0 14px 28px -16px rgba(8,43,83,.55);transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+.btn-pill:not(.f-book)::after{content:"\2192";flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:1.125rem;font-weight:700;transition:transform .2s,background .2s}
+.btn-pill:not(.f-book):hover{transform:translateY(-2px);box-shadow:0 20px 34px -16px rgba(8,43,83,.6)}
+.btn-pill:not(.f-book):hover::after{transform:translateX(3px)}
+.btn-pill.btn-primary:not(.f-book){background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-pill.btn-primary:not(.f-book)::after{background:#fff;color:var(--accent)}
+.btn-pill.btn-primary:not(.f-book):hover{background:var(--accent-dk);border-color:var(--accent-dk)}
+.btn-pill.btn-invert,.btn-pill.btn-ghost{background:#fff;color:var(--navy);border-color:#fff}
+.btn-pill.btn-ghost{border-color:#CFE3F3}
+.btn-pill.btn-invert::after,.btn-pill.btn-ghost::after{background:var(--accent);color:#fff}
+.btn-pill.btn-invert:hover,.btn-pill.btn-ghost:hover{background:#fff;color:var(--accent-dk)}
+.btn-pill.nav-cta{min-height:46px;padding:4px 4px 4px 20px;gap:10px;font-size:.9375rem}
+.btn-pill.nav-cta::after{width:36px;height:36px;font-size:1rem}
+@media (max-width:520px){.btn-pill:not(.f-book){padding-left:20px;font-size:.9375rem}}
