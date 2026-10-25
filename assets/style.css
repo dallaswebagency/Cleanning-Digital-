@@ -556,3 +556,7 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 .fbot-l{display:flex;gap:var(--s5)}
 @media (max-width:1040px){.fgrid{grid-template-columns:1fr 1fr}.f-top{padding:var(--s5)}}
 @media (max-width:620px){.fgrid{grid-template-columns:1fr}.f-top-cta{width:100%}.f-top .btn{width:100%}}
+.f-social{display:flex;align-items:center;gap:12px;margin-top:var(--s4)}
+.f-social span{font-size:.875rem;font-weight:600;color:#C5D9EC;margin-right:4px}
+.f-social a{width:44px;height:44px;padding:0!important;border-radius:50%;border:1px solid #1E4C80;display:grid!important;place-items:center;color:#fff;background:rgba(255,255,255,.05);transition:background .2s,border-color .2s,transform .2s}
+.f-social a:hover{background:var(--accent);border-color:var(--accent);text-decoration:none!important;transform:translateY(-2px)}
