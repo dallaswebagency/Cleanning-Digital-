@@ -774,3 +774,7 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 /* numbering removed site-wide */
 .step::before{content:none;display:none}
 .fq-n,.pr-n{display:none}
+
+/* service page process cards */
+.svc-pr{opacity:1!important;filter:none!important;transform:none!important}
+.svc-pr h3,.svc-pr p{color:inherit;opacity:1}
