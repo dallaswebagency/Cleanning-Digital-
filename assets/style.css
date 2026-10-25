@@ -678,7 +678,7 @@ a.card:hover,.card:hover{border-color:var(--mid)}
 @media(prefers-reduced-motion:reduce){.rev-pop{transition:none;transform:none}}
 
 /* small review frame in the home hero */
-.hero-rev{position:absolute;right:max(24px,calc((100% - 1200px)/2));bottom:48px;width:300px;margin:0;padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff}
+.hero-rev{position:absolute;right:max(24px,calc((100% - 1200px)/2));bottom:48px;width:340px;margin:0;padding:18px 20px;border-radius:16px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff}
 .hr-stars{color:var(--gold);letter-spacing:2px}
 .hero-rev blockquote{margin:6px 0 10px;font-size:1rem;line-height:1.5;font-weight:600;color:#fff}
 .hero-rev figcaption{font-size:.8125rem;color:#E3EEF8}.hero-rev figcaption b{color:#fff}
