@@ -986,3 +986,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #9C
 /* remove decorative dash before/after section labels */
 .eyebrow::before,.eyebrow::after,.sec-head.center .eyebrow::after,.dark .eyebrow::before,.hero-video .eyebrow::before,.cta-band .eyebrow::before,.cta-split .eyebrow::before,.page-hero.ph-photo .eyebrow::before{content:none!important;display:none!important}
 .eyebrow{display:inline-block;gap:0}
+
+/* v4 extra small screens */
+@media (max-width:359px){
+  .header .brand .logo img{height:34px}
+  .logo-by{font-size:.75rem}
+  .burger{width:44px;height:44px}
+  .container{padding-inline:16px}
+}
