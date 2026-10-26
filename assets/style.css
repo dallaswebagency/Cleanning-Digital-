@@ -1029,3 +1029,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #9C
 @keyframes apPulse{0%{transform:scale(.9);opacity:.9}70%,100%{transform:scale(1.35);opacity:0}}
 @keyframes apFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 @media (prefers-reduced-motion:reduce){.ap-n::before,.ap-n svg{animation:none}.ap-step,.ap-step::before{transition:none}}
+
+/* QA: comfortable tap targets for small text links */
+.footer a,.f-trust a,.tp-link,a[href*="trustpilot"]{display:inline-block;padding-block:6px}
+@media (max-width:900px){
+  .logo-by{display:inline-block;padding-block:8px;margin-top:-6px;margin-bottom:-6px}
+  .rv-toast a,.toast a,.tp-toast a{display:inline-block;padding-block:10px}
+}
+.rp-l{display:inline-block;padding-block:10px}
