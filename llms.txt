@@ -5,7 +5,7 @@
 ## Main pages
 - [Home](https://cleanningdigital.com/): Overview of services for cleaning companies
 - [Services](https://cleanningdigital.com/services.html): Brand design, web design, local SEO, AI SEO, Google Business Profile, Google Ads, Meta ads, booking systems, support
-- [Pricing](https://cleanningdigital.com/pricing.html): How website and marketing packages are structured
+- [Pricing](https://cleanningdigital.com/pricing.html): Three fixed one-time website packages: $490, $650 and $780
 - [Our work](https://cleanningdigital.com/projects.html): Homepage designs built for cleaning companies
 - [About](https://cleanningdigital.com/about.html): Nakul Chandra and how CleaningDigital works
 - [Contact](https://cleanningdigital.com/contact.html): Book a discovery call
@@ -21,6 +21,10 @@
 - [Booking system for cleaning companies](https://cleanningdigital.com/booking-system-for-cleaning-companies.html)
 - [Brand design for cleaning companies](https://cleanningdigital.com/brand-design-for-cleaning-companies.html)
 - [Website support for cleaning companies](https://cleanningdigital.com/website-support-for-cleaning-companies.html)
+
+## Locations
+- [Calgary, Alberta](https://cleanningdigital.com/cleaning-company-marketing-calgary-alberta.html): Marketing for Calgary cleaning companies, worked remotely
+- [Dallas, Texas](https://cleanningdigital.com/cleaning-company-marketing-dallas-texas.html): Marketing for Dallas cleaning companies, worked remotely
 
 ## Contact
 - Email: nakul@cleanningdigital.com
