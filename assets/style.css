@@ -985,3 +985,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #9C
 .sg-grid .checks li{font-size:.9375rem}
 .sg-links{list-style:none;display:grid;gap:var(--s3)}.sg-links li{color:var(--muted);line-height:1.55}.sg-links a{font-weight:700;color:var(--accent-dk)}
 .callout p{margin:0}
+
+/* remove decorative dash before/after section labels */
+.eyebrow::before,.eyebrow::after,.sec-head.center .eyebrow::after,.dark .eyebrow::before,.hero-video .eyebrow::before,.cta-band .eyebrow::before,.cta-split .eyebrow::before,.page-hero.ph-photo .eyebrow::before{content:none!important;display:none!important}
+.eyebrow{display:inline-block;gap:0}
