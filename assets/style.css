@@ -994,3 +994,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #9C
   .burger{width:44px;height:44px}
   .container{padding-inline:16px}
 }
+
+/* location pages: one body text size and colour */
+.loc-page p,.loc-page li,.loc-page .lead,.loc-page .card p{font-size:1.0625rem;line-height:1.65;color:#252525;font-weight:400}
+.loc-page ol.checks{list-style:decimal;padding-left:22px;display:grid;gap:12px}
+.loc-page ol.checks li{display:list-item;padding-left:4px}
+.loc-page ol.checks li::before{content:none}
+.loc-page li b{font-weight:700;color:#111}
+.loc-page a.link,.loc-page p a{color:var(--blue,#0b6bb8);text-decoration:underline}
+.loc-page .sv-link{font-size:1rem;font-weight:600;color:var(--blue,#0b6bb8)}
+.loc-page .card h3{font-size:1.25rem;line-height:1.3;font-weight:600;color:#111}
