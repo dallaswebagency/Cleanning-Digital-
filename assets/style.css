@@ -873,9 +873,6 @@ section[id]{scroll-margin-top:130px}
 /* section headings: accent rule + tighter type */
 .sec-head h2,.split h2{letter-spacing:-.02em}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.12em}
-.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
-.sec-head.center .eyebrow::after{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
-.dark .eyebrow::before,.hero-video .eyebrow::before,.cta-band .eyebrow::before,.cta-split .eyebrow::before,.page-hero.ph-photo .eyebrow::before{background:#fff}
 /* alt sections: soft depth */
 .alt{background:linear-gradient(180deg,#EEF6FC 0%,#F6FAFE 100%);position:relative}
 /* buttons */
