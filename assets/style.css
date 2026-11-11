@@ -1037,3 +1037,5 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #9C
   .rv-toast a,.toast a,.tp-toast a{display:inline-block;padding-block:10px}
 }
 .rp-l{display:inline-block;padding-block:10px}
+
+.f-partners{margin-top:18px}.f-partners img{display:block;max-width:100%;height:auto;border-radius:10px;background:#fff}
