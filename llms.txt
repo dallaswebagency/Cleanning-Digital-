@@ -1,8 +1,13 @@
 # CleaningDigital
 
-> Web design, local SEO, AI SEO, Google Ads and digital marketing exclusively for cleaning companies. Focused on Calgary, Alberta, and working remotely with cleaning company owners across Canada and the United States. Founder and Lead Strategist: Nakul Chandra.
+> Web design, local SEO, AI SEO, Google Ads and digital marketing exclusively for cleaning companies. Working remotely with cleaning company owners across the United States, with a focus on Florida, Michigan, Illinois and Texas, and across Canada, including Calgary, Alberta. Founder and Lead Strategist: Nakul Chandra.
 
 ## Main pages
+- [Locations](https://cleanningdigital.com/locations/): Florida, Michigan, Illinois and Texas pages
+- [Florida](https://cleanningdigital.com/locations/florida/)
+- [Michigan](https://cleanningdigital.com/locations/michigan/)
+- [Illinois](https://cleanningdigital.com/locations/illinois/)
+- [Texas](https://cleanningdigital.com/locations/texas/)
 - [Home](https://cleanningdigital.com/): Overview of services for cleaning companies
 - [Services](https://cleanningdigital.com/services.html): Brand design, web design, local SEO, AI SEO, Google Business Profile, Google Ads, Meta ads, booking systems, support
 - [Pricing](https://cleanningdigital.com/pricing.html): Three fixed one-time website packages: $490, $650 and $780
