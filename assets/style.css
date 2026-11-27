@@ -1039,3 +1039,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #9C
 .rp-l{display:inline-block;padding-block:10px}
 
 .f-partners{margin-top:18px}.f-partners img{display:block;max-width:100%;height:auto;border-radius:10px;background:#fff}
+
+.footer .f-phone{display:inline-flex;align-items:center;justify-content:center;gap:12px;white-space:nowrap;margin-top:14px;min-height:52px;padding:6px 6px 6px 22px;font-size:1rem}
+.footer .f-phone::after{width:40px;height:40px;background:#fff;color:var(--navy)}
+.footer .f-phone:hover{background:rgba(255,255,255,.12)}
